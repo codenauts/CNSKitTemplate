@@ -1,0 +1,9 @@
+/* 
+   Localizable.strings
+   Template
+
+   Created by Thomas Dohmke on 31.03.10.
+   Copyright 2010 haIT GmbH. All rights reserved.
+ */
+
+"HelloWorld" = "Hallo Welt"; 
