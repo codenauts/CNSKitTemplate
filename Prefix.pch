@@ -29,3 +29,5 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 #endif
+
+#define CNS_APPLICATION_DELEGATE_CLASS CNSApplicationDelegate

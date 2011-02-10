@@ -15,6 +15,15 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
+		4DD5EA841303FAA100BCC3E5 /* NSString+CNSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD5EA561303FAA100BCC3E5 /* NSString+CNSStringAdditions.m */; };
+		4DD5EA851303FAA100BCC3E5 /* CNSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD5EA591303FAA100BCC3E5 /* CNSBaseViewController.m */; };
+		4DD5EA861303FAA100BCC3E5 /* CNSKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD5EA5C1303FAA100BCC3E5 /* CNSKeychainUtils.m */; };
+		4DD5EA871303FAA100BCC3E5 /* CNSPasswordStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD5EA5E1303FAA100BCC3E5 /* CNSPasswordStore.m */; };
+		4DD5EA881303FAA100BCC3E5 /* CNSTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD5EA601303FAA100BCC3E5 /* CNSTableViewDataSource.m */; };
+		4DD5EA891303FAA100BCC3E5 /* CNSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD5EA621303FAA100BCC3E5 /* CNSUser.m */; };
+		4DD5EA8A1303FAA100BCC3E5 /* CNSLogHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD5EA651303FAA100BCC3E5 /* CNSLogHelper.m */; };
+		4DD5EA8B1303FAA100BCC3E5 /* CNSInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD5EA681303FAA100BCC3E5 /* CNSInputCell.m */; };
+		4DD5EA8D1303FAA100BCC3E5 /* CNSInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DD5EA6C1303FAA100BCC3E5 /* CNSInputCell.xib */; };
 		6CABF90712E5F27B00FC0568 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CABF90512E5F27B00FC0568 /* Localizable.strings */; };
 		6CABF95712E5F8B700FC0568 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CABF95612E5F8B700FC0568 /* Security.framework */; };
 /* End PBXBuildFile section */
@@ -32,6 +41,23 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		4D4C006912E3741E00F0AE8D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DD5EA551303FAA100BCC3E5 /* NSString+CNSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CNSStringAdditions.h"; sourceTree = "<group>"; };
+		4DD5EA561303FAA100BCC3E5 /* NSString+CNSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CNSStringAdditions.m"; sourceTree = "<group>"; };
+		4DD5EA581303FAA100BCC3E5 /* CNSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSBaseViewController.h; sourceTree = "<group>"; };
+		4DD5EA591303FAA100BCC3E5 /* CNSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSBaseViewController.m; sourceTree = "<group>"; };
+		4DD5EA5B1303FAA100BCC3E5 /* CNSKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSKeychainUtils.h; sourceTree = "<group>"; };
+		4DD5EA5C1303FAA100BCC3E5 /* CNSKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSKeychainUtils.m; sourceTree = "<group>"; };
+		4DD5EA5D1303FAA100BCC3E5 /* CNSPasswordStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSPasswordStore.h; sourceTree = "<group>"; };
+		4DD5EA5E1303FAA100BCC3E5 /* CNSPasswordStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSPasswordStore.m; sourceTree = "<group>"; };
+		4DD5EA5F1303FAA100BCC3E5 /* CNSTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSTableViewDataSource.h; sourceTree = "<group>"; };
+		4DD5EA601303FAA100BCC3E5 /* CNSTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSTableViewDataSource.m; sourceTree = "<group>"; };
+		4DD5EA611303FAA100BCC3E5 /* CNSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSUser.h; sourceTree = "<group>"; };
+		4DD5EA621303FAA100BCC3E5 /* CNSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSUser.m; sourceTree = "<group>"; };
+		4DD5EA641303FAA100BCC3E5 /* CNSLogHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSLogHelper.h; sourceTree = "<group>"; };
+		4DD5EA651303FAA100BCC3E5 /* CNSLogHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSLogHelper.m; sourceTree = "<group>"; };
+		4DD5EA671303FAA100BCC3E5 /* CNSInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSInputCell.h; sourceTree = "<group>"; };
+		4DD5EA681303FAA100BCC3E5 /* CNSInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSInputCell.m; sourceTree = "<group>"; };
+		4DD5EA6C1303FAA100BCC3E5 /* CNSInputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CNSInputCell.xib; sourceTree = "<group>"; };
 		6CABF90612E5F27B00FC0568 /* German */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = German; path = Localizable.strings; sourceTree = "<group>"; };
 		6CABF95612E5F8B700FC0568 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -116,6 +142,94 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4DD5EA2D1303FAA100BCC3E5 /* CNSKit */ = {
+			isa = PBXGroup;
+			children = (
+				4DD5EA531303FAA100BCC3E5 /* Classes */,
+				4DD5EA6A1303FAA100BCC3E5 /* Resources */,
+			);
+			path = CNSKit;
+			sourceTree = "<group>";
+		};
+		4DD5EA531303FAA100BCC3E5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4DD5EA541303FAA100BCC3E5 /* Categories */,
+				4DD5EA571303FAA100BCC3E5 /* Controllers */,
+				4DD5EA5A1303FAA100BCC3E5 /* Data */,
+				4DD5EA631303FAA100BCC3E5 /* Debug */,
+				4DD5EA661303FAA100BCC3E5 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4DD5EA541303FAA100BCC3E5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4DD5EA551303FAA100BCC3E5 /* NSString+CNSStringAdditions.h */,
+				4DD5EA561303FAA100BCC3E5 /* NSString+CNSStringAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		4DD5EA571303FAA100BCC3E5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4DD5EA581303FAA100BCC3E5 /* CNSBaseViewController.h */,
+				4DD5EA591303FAA100BCC3E5 /* CNSBaseViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4DD5EA5A1303FAA100BCC3E5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4DD5EA5B1303FAA100BCC3E5 /* CNSKeychainUtils.h */,
+				4DD5EA5C1303FAA100BCC3E5 /* CNSKeychainUtils.m */,
+				4DD5EA5D1303FAA100BCC3E5 /* CNSPasswordStore.h */,
+				4DD5EA5E1303FAA100BCC3E5 /* CNSPasswordStore.m */,
+				4DD5EA5F1303FAA100BCC3E5 /* CNSTableViewDataSource.h */,
+				4DD5EA601303FAA100BCC3E5 /* CNSTableViewDataSource.m */,
+				4DD5EA611303FAA100BCC3E5 /* CNSUser.h */,
+				4DD5EA621303FAA100BCC3E5 /* CNSUser.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4DD5EA631303FAA100BCC3E5 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				4DD5EA641303FAA100BCC3E5 /* CNSLogHelper.h */,
+				4DD5EA651303FAA100BCC3E5 /* CNSLogHelper.m */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		4DD5EA661303FAA100BCC3E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4DD5EA671303FAA100BCC3E5 /* CNSInputCell.h */,
+				4DD5EA681303FAA100BCC3E5 /* CNSInputCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4DD5EA6A1303FAA100BCC3E5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4DD5EA6B1303FAA100BCC3E5 /* Interfaces */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4DD5EA6B1303FAA100BCC3E5 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				4DD5EA6C1303FAA100BCC3E5 /* CNSInputCell.xib */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
 		6CABF8ED12E5F16C00FC0568 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +289,7 @@
 		6CABF90912E5F2A400FC0568 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				4DD5EA2D1303FAA100BCC3E5 /* CNSKit */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -244,6 +359,7 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				6CABF90712E5F27B00FC0568 /* Localizable.strings in Resources */,
+				4DD5EA8D1303FAA100BCC3E5 /* CNSInputCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +373,14 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* CNSApplicationDelegate.m in Sources */,
 				28193060112F816700ECF9B4 /* Base.xcdatamodeld in Sources */,
+				4DD5EA841303FAA100BCC3E5 /* NSString+CNSStringAdditions.m in Sources */,
+				4DD5EA851303FAA100BCC3E5 /* CNSBaseViewController.m in Sources */,
+				4DD5EA861303FAA100BCC3E5 /* CNSKeychainUtils.m in Sources */,
+				4DD5EA871303FAA100BCC3E5 /* CNSPasswordStore.m in Sources */,
+				4DD5EA881303FAA100BCC3E5 /* CNSTableViewDataSource.m in Sources */,
+				4DD5EA891303FAA100BCC3E5 /* CNSUser.m in Sources */,
+				4DD5EA8A1303FAA100BCC3E5 /* CNSLogHelper.m in Sources */,
+				4DD5EA8B1303FAA100BCC3E5 /* CNSInputCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

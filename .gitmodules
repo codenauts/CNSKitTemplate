@@ -1,0 +1,3 @@
+[submodule "Vendor/CNSKit"]
+	path = Vendor/CNSKit
+	url = git://github.com/codenauts/CNSKit.git
