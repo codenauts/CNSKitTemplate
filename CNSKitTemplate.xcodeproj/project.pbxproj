@@ -21,9 +21,10 @@
 		4DD5EA871303FAA100BCC3E5 /* CNSPasswordStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD5EA5E1303FAA100BCC3E5 /* CNSPasswordStore.m */; };
 		4DD5EA881303FAA100BCC3E5 /* CNSTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD5EA601303FAA100BCC3E5 /* CNSTableViewDataSource.m */; };
 		4DD5EA891303FAA100BCC3E5 /* CNSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD5EA621303FAA100BCC3E5 /* CNSUser.m */; };
-		4DD5EA8A1303FAA100BCC3E5 /* CNSLogHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD5EA651303FAA100BCC3E5 /* CNSLogHelper.m */; };
 		4DD5EA8B1303FAA100BCC3E5 /* CNSInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD5EA681303FAA100BCC3E5 /* CNSInputCell.m */; };
 		4DD5EA8D1303FAA100BCC3E5 /* CNSInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DD5EA6C1303FAA100BCC3E5 /* CNSInputCell.xib */; };
+		4DECB4321309AE080065C9B3 /* CNSClassUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DECB42F1309AE080065C9B3 /* CNSClassUtils.m */; };
+		4DECB4331309AE080065C9B3 /* CNSLogHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DECB4311309AE080065C9B3 /* CNSLogHelper.m */; };
 		6CABF90712E5F27B00FC0568 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CABF90512E5F27B00FC0568 /* Localizable.strings */; };
 		6CABF95712E5F8B700FC0568 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CABF95612E5F8B700FC0568 /* Security.framework */; };
 /* End PBXBuildFile section */
@@ -53,11 +54,13 @@
 		4DD5EA601303FAA100BCC3E5 /* CNSTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSTableViewDataSource.m; sourceTree = "<group>"; };
 		4DD5EA611303FAA100BCC3E5 /* CNSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSUser.h; sourceTree = "<group>"; };
 		4DD5EA621303FAA100BCC3E5 /* CNSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSUser.m; sourceTree = "<group>"; };
-		4DD5EA641303FAA100BCC3E5 /* CNSLogHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSLogHelper.h; sourceTree = "<group>"; };
-		4DD5EA651303FAA100BCC3E5 /* CNSLogHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSLogHelper.m; sourceTree = "<group>"; };
 		4DD5EA671303FAA100BCC3E5 /* CNSInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSInputCell.h; sourceTree = "<group>"; };
 		4DD5EA681303FAA100BCC3E5 /* CNSInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSInputCell.m; sourceTree = "<group>"; };
 		4DD5EA6C1303FAA100BCC3E5 /* CNSInputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CNSInputCell.xib; sourceTree = "<group>"; };
+		4DECB42E1309AE080065C9B3 /* CNSClassUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSClassUtils.h; sourceTree = "<group>"; };
+		4DECB42F1309AE080065C9B3 /* CNSClassUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSClassUtils.m; sourceTree = "<group>"; };
+		4DECB4301309AE080065C9B3 /* CNSLogHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNSLogHelper.h; sourceTree = "<group>"; };
+		4DECB4311309AE080065C9B3 /* CNSLogHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNSLogHelper.m; sourceTree = "<group>"; };
 		6CABF90612E5F27B00FC0568 /* German */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = German; path = Localizable.strings; sourceTree = "<group>"; };
 		6CABF95612E5F8B700FC0568 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -157,7 +160,7 @@
 				4DD5EA541303FAA100BCC3E5 /* Categories */,
 				4DD5EA571303FAA100BCC3E5 /* Controllers */,
 				4DD5EA5A1303FAA100BCC3E5 /* Data */,
-				4DD5EA631303FAA100BCC3E5 /* Debug */,
+				4DECB42D1309AE080065C9B3 /* Helpers */,
 				4DD5EA661303FAA100BCC3E5 /* Views */,
 			);
 			path = Classes;
@@ -196,15 +199,6 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		4DD5EA631303FAA100BCC3E5 /* Debug */ = {
-			isa = PBXGroup;
-			children = (
-				4DD5EA641303FAA100BCC3E5 /* CNSLogHelper.h */,
-				4DD5EA651303FAA100BCC3E5 /* CNSLogHelper.m */,
-			);
-			path = Debug;
-			sourceTree = "<group>";
-		};
 		4DD5EA661303FAA100BCC3E5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +222,17 @@
 				4DD5EA6C1303FAA100BCC3E5 /* CNSInputCell.xib */,
 			);
 			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		4DECB42D1309AE080065C9B3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4DECB42E1309AE080065C9B3 /* CNSClassUtils.h */,
+				4DECB42F1309AE080065C9B3 /* CNSClassUtils.m */,
+				4DECB4301309AE080065C9B3 /* CNSLogHelper.h */,
+				4DECB4311309AE080065C9B3 /* CNSLogHelper.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		6CABF8ED12E5F16C00FC0568 /* Controllers */ = {
@@ -379,8 +384,9 @@
 				4DD5EA871303FAA100BCC3E5 /* CNSPasswordStore.m in Sources */,
 				4DD5EA881303FAA100BCC3E5 /* CNSTableViewDataSource.m in Sources */,
 				4DD5EA891303FAA100BCC3E5 /* CNSUser.m in Sources */,
-				4DD5EA8A1303FAA100BCC3E5 /* CNSLogHelper.m in Sources */,
 				4DD5EA8B1303FAA100BCC3E5 /* CNSInputCell.m in Sources */,
+				4DECB4321309AE080065C9B3 /* CNSClassUtils.m in Sources */,
+				4DECB4331309AE080065C9B3 /* CNSLogHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
