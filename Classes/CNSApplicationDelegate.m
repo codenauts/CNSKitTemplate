@@ -30,6 +30,11 @@
 
 @implementation CNSApplicationDelegate
 
+@synthesize managedObjectContext;
+@synthesize managedObjectModel;
+@synthesize persistentStoreCoordinator;
+@synthesize window;
+
 #pragma mark -
 #pragma mark Application Delegate Methods
 

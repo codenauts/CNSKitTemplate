@@ -26,6 +26,10 @@
 #endif
 
 @interface CNSApplicationDelegate : NSObject <UIApplicationDelegate> {
+  NSManagedObjectContext *managedObjectContext;
+  NSManagedObjectModel *managedObjectModel;
+  NSPersistentStoreCoordinator *persistentStoreCoordinator;
+  UIWindow *window;
 }
 
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
